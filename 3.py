@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -105,7 +100,6 @@ if __name__ == '__main__':
         # Полное поле/ расеенное поле
         Hy[sourcePos - 1] -= (Sc / W0) * Signal(0, q, name_signal)
         # Граничное условие
-        Ez[0] = Ez[1]
         Ez[-1] = 0
         # Расчет компоненты поля E
         Hy_shift = Hy[:-1]
