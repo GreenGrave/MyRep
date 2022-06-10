@@ -1,16 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[49]:
-
-
-import numpy as np
 import requests
+import re
 from os import path, makedirs
 import matplotlib.pyplot as plt
 import scipy.special.cython_special
 import json
-
 
 url = 'https://jenyay.net/uploads/Student/Modelling/task_02_01.txt'
 r = requests.get(url = url)
@@ -83,9 +77,6 @@ data = {
 
 with open("results/Rec.json", "w") as write_file:
     json.dump(data, write_file)
-
-
-# In[ ]:
 
 
 
